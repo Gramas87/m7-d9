@@ -1,5 +1,5 @@
 import ListGroup from 'react-bootstrap/ListGroup'
-import Comment from "../types/IComment"
+
 import Pasta from "../types/IPastaObject"
 
 
