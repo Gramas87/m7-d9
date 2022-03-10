@@ -3,9 +3,10 @@ import { useParams } from 'react-router-dom'
 import dishes from '../data/menu.json'
 import DishComments from './DishComments'
 import { Col, Row, Container } from 'react-bootstrap'
+import Pasta from "../types/IPastaObject"
 
 const Details = () => {
-  const [pasta, setPasta] = useState(undefined)
+  const [pasta, setPasta] = useState<undefined | Pasta>(undefined)
 
   const params = useParams()
 

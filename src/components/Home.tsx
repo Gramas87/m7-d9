@@ -2,9 +2,15 @@ import { useState } from 'react'
 import { Carousel, Container, Col, Row } from 'react-bootstrap'
 import items from '../data/menu.json'
 import DishComments from './DishComments'
+import Pasta from "../types/IPastaObject"
+
+ interface PastaProps{
+   pasta:Pasta
+ }
+  
 
 const Home = () => {
-  const [selectedDish, setSelectedDish] = useState(undefined)
+  const [selectedDish, setSelectedDish] = useState<undefined | Pasta>(undefined)
 
   return (
     <Container>
